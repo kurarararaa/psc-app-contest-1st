@@ -91,3 +91,11 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+@import '~/assets/main.scss';
+
+main {
+  background-color: $background;
+}
+</style>
