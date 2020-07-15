@@ -1,0 +1,22 @@
+@import './override.scss';
+@import '~vuetify/src/styles/styles.sass';
+@import '~vuetify/src/styles/main.sass';
+
+main {
+  @extend .base-background;
+}
+
+.base-background {
+  @extend .deep-orange;
+  @extend .lighten-5;
+}
+
+.base-background-flat-shadow {
+  box-shadow: $flat-shadow !important;
+  @extend .base-background;
+}
+
+.base-background-pressed-shadow {
+  box-shadow: $pressed-shadow !important;
+  @extend .base-background;
+}

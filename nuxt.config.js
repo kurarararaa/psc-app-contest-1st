@@ -32,7 +32,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/main.scss'],
+  css: ['~/assets/style/main.scss'],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
@@ -58,7 +58,11 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/style-resources',
   ],
+  styleResources: {
+    scss: ['~/assets/style/variables.scss'],
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
@@ -73,14 +77,8 @@ export default {
     theme: {
       dark: false,
       themes: {
-        dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
+        light: {
+          primary: colors.red.darken1,
         },
       },
     },

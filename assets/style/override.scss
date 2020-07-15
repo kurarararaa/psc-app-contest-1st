@@ -1,0 +1,5 @@
+// Override Vuetify Styles.
+
+.v-sheet.v-app-bar.v-toolbar:not(.v-sheet--outlined) {
+    box-shadow: $flat-shadow !important;
+}
