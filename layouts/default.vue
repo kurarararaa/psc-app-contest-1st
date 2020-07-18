@@ -54,7 +54,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js',
+      title: 'Flutter アプリコンテスト 2020',
     }
   },
 }
