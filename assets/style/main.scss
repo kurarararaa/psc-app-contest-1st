@@ -2,13 +2,21 @@
 @import '~vuetify/src/styles/styles.sass';
 @import '~vuetify/src/styles/main.sass';
 
+html{
+  overflow-y: hidden !important;
+}
+
 main {
   @extend .base-background;
 }
 
+div {
+  @extend .indigo--text;
+}
+
 .base-background {
-  @extend .deep-orange;
-  @extend .lighten-5;
+  @extend .light-blue;
+  @extend .lighten-4;
 }
 
 .base-background-flat-shadow {

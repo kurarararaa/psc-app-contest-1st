@@ -1,7 +1,10 @@
 
 // colors
-$base-color: #FBE9E7;
+$base-color: #B3E5FC;
+$base-light-shadow-color: #ceffff;
+$base-dark-shadow-color: #98c3d6;
+$bace-text-color: #A1887F;
 
 // shadows
-$flat-shadow: 12px 12px 24px #ecdbd9, -12px -12px 24px #fff7f5;
-$pressed-shadow: inset 12px 12px 24px #ecdbd9, inset -12px -12px 24px #fff7f5;
+$flat-shadow: 12px 12px 24px $base-dark-shadow-color, -12px -12px 24px $base-light-shadow-color;
+$pressed-shadow: inset 12px 12px 24px $base-dark-shadow-color, inset -12px -12px 24px $base-light-shadow-color;

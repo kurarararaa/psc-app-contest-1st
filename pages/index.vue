@@ -1,9 +1,12 @@
 <template>
-  <v-layout justify-center align-center>
+  <v-container
+    class="pa-12 text-center rounded-xl base-background-pressed-shadow"
+  >
     <v-carousel
       height="60vh"
       hide-delimiter-background
       show-arrows-on-hover
+      class="rounded-xl"
     >
       <v-carousel-item v-for="(slide, i) in slides" :key="i">
         <v-sheet :color="colors[i]" height="100%">
@@ -13,12 +16,18 @@
         </v-sheet>
       </v-carousel-item>
     </v-carousel>
-  </v-layout>
+  </v-container>
 </template>
 
-<script>
+<script lang="ts">
+
+type Data = {
+  colors: string[]
+  slides: string[]
+}
+
 export default {
-  data() {
+  data(): Data {
     return {
       colors: [
         'indigo',

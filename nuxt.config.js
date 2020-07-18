@@ -87,5 +87,23 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
+  build: {
+    babel: {
+      plugins: [
+        ['@babel/plugin-proposal-decorators', { legacy: true }],
+        ['@babel/plugin-proposal-class-properties', { loose: true }],
+      ],
+    },
+  },
+  /*
+   ** Typescript lint configuration
+   ** See https://typescript.nuxtjs.org/ja/guide/lint.html#%E3%83%A9%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%A0-lint
+   */
+  typescript: {
+    typeCheck: {
+      eslint: {
+        files: './src/**/*.{ts,js,vue}',
+      },
+    },
+  },
 }
