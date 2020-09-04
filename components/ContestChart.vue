@@ -23,10 +23,10 @@ export default class ContestChart extends Vue {
     datasets: [
       {
         label: '受賞アプリ',
-        data: [6.8, 9.2, 7.0, 8.2],
-        borderColor: "#B3E5FC",
+        data: [8.0, 7.88, 7.25, 7.0],
+        borderColor: '#fccab3',
         borderWidth: 1,
-        backgroundColor: "rgba(206, 255, 255, 0.6)",
+        backgroundColor: 'rgba(252, 202, 179, 0.6)',
       },
     ],
   }
@@ -64,7 +64,7 @@ export default class ContestChart extends Vue {
    * chartStylesを設定しているので、
    * height/wightが有効になる
    */
-  height: 40vh;
+  height: 60vh;
   width: 80vw;
   margin: 0 auto;
 }

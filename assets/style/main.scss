@@ -15,8 +15,7 @@ div {
 }
 
 .base-background {
-  @extend .light-blue;
-  @extend .lighten-4;
+  background-color: $base-color !important;
 }
 
 .base-background-flat-shadow {

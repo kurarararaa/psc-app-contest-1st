@@ -3,7 +3,7 @@
     <v-app-bar
       app
       :clipped-left="clipped"
-      color="light-blue lighten-4"
+      color="#fff"
       rounded="true"
       class="text-center rounded-b-xl"
     >
