@@ -9,10 +9,12 @@
       class="rounded-xl"
     >
       <CarouselIdea />
+      <CarouselUx />
     </v-carousel>
   </v-container>
 </template>
 
 <script lang="ts">
 import CarouselIdea from '~/components/CarouselIdea.vue'
+import CarouselUx from '~/components/CarouselUx.vue'
 </script>

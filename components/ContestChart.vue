@@ -18,22 +18,6 @@ export default class ContestChart extends Vue {
   @Prop({ type: Object, required: true })
   chartData: ChartData
 
-  // // チャートのデータ
-  // private chartData: ChartData = {
-  //   // 横軸のラベル
-  //   labels: ['完成度', 'アイデア', 'UX', '有益性'],
-  //   // データのリスト
-  //   datasets: [
-  //     {
-  //       label: '受賞アプリ',
-  //       data: [8.0, 7.88, 7.25, 7.0],
-  //       borderColor: '#fccab3',
-  //       borderWidth: 1,
-  //       backgroundColor: 'rgba(252, 202, 179, 0.6)',
-  //     },
-  //   ],
-  // }
-
   // チャートのオプション
   private chartOption: ChartOptions = {
     // アスペクト比を固定しないように変更
