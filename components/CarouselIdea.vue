@@ -28,10 +28,10 @@ export default class CarouselIdea extends Vue {
     datasets: [
       {
         label: '受賞アプリ',
-        data: [8.0, 7.88, 7.25, 7.0],
-        borderColor: '#fccab3',
+        data: [7.72, 7.36, 7.18, 6.55],
+        borderColor: '#fc636b',
         borderWidth: 1,
-        backgroundColor: 'rgba(252, 202, 179, 0.6)',
+        backgroundColor: 'rgba(252, 99, 107, 0.6)',
       },
     ],
   }

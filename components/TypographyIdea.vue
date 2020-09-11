@@ -46,19 +46,19 @@
         <div class="ticket__timing">
           <p>
             <span class="u-upper ticket__small-label">完成度</span>
-            <span class="ticket__detail"> 8.00 </span>
+            <span class="ticket__detail"> 7.72 </span>
           </p>
           <p>
             <span class="u-upper ticket__small-label">UX</span>
-            <span class="ticket__detail"> 7.25 </span>
+            <span class="ticket__detail"> 7.18 </span>
           </p>
           <p>
             <span class="u-upper ticket__small-label">有益性</span>
-            <span class="ticket__detail"> 7.00 </span>
+            <span class="ticket__detail"> 6.55 </span>
           </p>
         </div>
         <p class="ticket__fine-print">アイデア</p>
-        <p class="u-upper ticket__admit">7.88</p>
+        <p class="u-upper ticket__admit">7.36</p>
         <img
           class="ticket__barcode"
           src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/515428/barcode.png"
@@ -121,6 +121,7 @@
   font-size: 2.5em;
   font-variation-settings: 'wght' 500, 'wdth' 75;
   letter-spacing: -0.01em;
+  color: #fc636b !important;
 }
 
 .ticket__co-subname {
@@ -136,6 +137,7 @@
   font-variation-settings: 'wght' 300;
   font-size: 2em;
   line-height: 1.1;
+  color: #fc636b !important;
 }
 
 .ticket__description {
@@ -153,6 +155,7 @@
   border-top: 2px solid #9facbc;
   border-bottom: 2px solid #9facbc;
   text-align: left;
+  justify-content: space-around;
 }
 
 .ticket__timing p {
@@ -183,8 +186,8 @@
 }
 
 .ticket__admit {
-  margin-top: 2rem;
-  font-size: 2.5em;
+  margin-top: 1rem;
+  font-size: 5.5em;
   font-variation-settings: 'wght' 700, 'wdth' 85;
   line-height: 1;
   color: #657990;

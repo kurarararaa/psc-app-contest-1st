@@ -2,16 +2,16 @@
   <div class="ux-container">
     <div class="left">
       <p class="red">完成度:</p>
-      <p>8.38</p>
+      <p>8.27</p>
       <p class="red">アイデア:</p>
-      <p>6.75</p>
+      <p>6.27</p>
       <p class="red">有益性:</p>
-      <p>6.75</p>
+      <p>6.27</p>
     </div>
     <div class="right">
-      <h1 class="blue first">ux: 8.75</h1>
-      <h1 class="red second">ux: 8.75</h1>
-      <h1 class="yellow third">ux: 8.75</h1>
+      <h1 class="blue first">ux: 8.36</h1>
+      <h1 class="red second">ux: 8.36</h1>
+      <h1 class="yellow third">ux: 8.36</h1>
     </div>
   </div>
 </template>
@@ -40,7 +40,7 @@ $yellow: #fff146;
 .right {
   position: absolute;
   bottom: 180px;
-  right: 0;
+  right: 50px;
 }
 
 p {

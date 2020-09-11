@@ -59,9 +59,15 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
+    'nuxt-webfontloader',
   ],
   styleResources: {
     scss: ['~/assets/style/variables.scss'],
+  },
+  webfontloader: {
+    google: {
+      families: ['Arvo:ital,wght@1,700', 'Seaweed+Script'],
+    },
   },
   /*
    ** Axios module configuration

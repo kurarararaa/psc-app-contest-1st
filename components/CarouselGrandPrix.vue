@@ -19,7 +19,7 @@ import ContestChart from '~/components/ContestChart.vue'
 import TypographyUx from '~/components/TypographyUx.vue'
 
 @Component({ components: { ContestChart } })
-export default class CarouselUx extends Vue {
+export default class CarouselGrandPrix extends Vue {
   // チャートのデータ
   private chartData: ChartData = {
     // 横軸のラベル
@@ -28,10 +28,10 @@ export default class CarouselUx extends Vue {
     datasets: [
       {
         label: '受賞アプリ',
-        data: [8.27, 6.27, 8.36, 6.27],
-        borderColor: '#6a67ce',
+        data: [8.09, 7.91, 6.73, 7.64],
+        borderColor: '#ffb900',
         borderWidth: 1,
-        backgroundColor: 'rgba(106, 103, 206, 0.6)',
+        backgroundColor: 'rgba(255, 185, 0, 0.6)',
       },
     ],
   }

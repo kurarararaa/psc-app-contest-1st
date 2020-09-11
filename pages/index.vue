@@ -8,13 +8,19 @@
       show-arrows-on-hover
       class="rounded-xl"
     >
+      <CarouselCompleteness />
       <CarouselIdea />
       <CarouselUx />
+      <CarouselUsefulness />
+      <CarouselGrandPrix />
     </v-carousel>
   </v-container>
 </template>
 
 <script lang="ts">
+import CarouselCompleteness from '~/components/CarouselCompleteness.vue'
 import CarouselIdea from '~/components/CarouselIdea.vue'
 import CarouselUx from '~/components/CarouselUx.vue'
+import CarouselUsefulness from '~/components/CarouselUsefulness.vue'
+import CarouselGrandPrix from '~/components/CarouselGrandPrix.vue'
 </script>

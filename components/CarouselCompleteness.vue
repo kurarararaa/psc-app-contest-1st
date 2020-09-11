@@ -6,7 +6,7 @@
           :chart-data="chartData"
           style="width: 30%; margin: 0 5% 0 10%;"
         />
-        <TypographyUx style="margin: 0 10% 0 5%;" />
+        <TypographyCompleteness style="margin: 0 10% 0 5%;" />
       </v-row>
     </v-sheet>
   </v-carousel-item>
@@ -16,10 +16,10 @@
 import { Component, Vue, Prop } from 'nuxt-property-decorator'
 import { ChartData } from 'chart.js'
 import ContestChart from '~/components/ContestChart.vue'
-import TypographyUx from '~/components/TypographyUx.vue'
+import TypographyCompleteness from '~/components/TypographyCompleteness.vue'
 
 @Component({ components: { ContestChart } })
-export default class CarouselUx extends Vue {
+export default class CarouselCompleteness extends Vue {
   // チャートのデータ
   private chartData: ChartData = {
     // 横軸のラベル
@@ -28,10 +28,10 @@ export default class CarouselUx extends Vue {
     datasets: [
       {
         label: '受賞アプリ',
-        data: [8.27, 6.27, 8.36, 6.27],
-        borderColor: '#6a67ce',
+        data: [8.55, 6.45, 7.73, 7.27],
+        borderColor: '#3be8b0',
         borderWidth: 1,
-        backgroundColor: 'rgba(106, 103, 206, 0.6)',
+        backgroundColor: 'rgba(59, 232, 176, 0.6)',
       },
     ],
   }
