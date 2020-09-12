@@ -6,7 +6,7 @@
           :chart-data="chartData"
           style="width: 30%; margin: 0 5% 0 10%;"
         />
-        <TypographyUx style="margin: 0 10% 0 5%;" />
+        <TypographyUsefulness style="margin: 0 10% 0 5%;" />
       </v-row>
     </v-sheet>
   </v-carousel-item>
@@ -16,7 +16,7 @@
 import { Component, Vue, Prop } from 'nuxt-property-decorator'
 import { ChartData } from 'chart.js'
 import ContestChart from '~/components/ContestChart.vue'
-import TypographyUx from '~/components/TypographyUx.vue'
+import TypographyUsefulness from '~/components/TypographyUsefulness.vue'
 
 @Component({ components: { ContestChart } })
 export default class CarouselUsefulness extends Vue {
