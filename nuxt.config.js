@@ -66,7 +66,12 @@ export default {
   },
   webfontloader: {
     google: {
-      families: ['Arvo:ital,wght@1,700', 'Seaweed+Script'],
+      families: [
+        'Arvo:ital,wght@1,700',
+        'Seaweed+Script',
+        'Raleway:wght@900',
+        'Oswald:wght@700',
+      ],
     },
   },
   /*

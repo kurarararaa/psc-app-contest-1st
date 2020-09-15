@@ -6,13 +6,6 @@
       </h1>
     </div>
     <div class="clear"></div>
-    <div class="grid_3">
-      <ul>
-        <li>有益性</li>
-        <li></li>
-        <li style="font-size: 3em;">7.27</li>
-      </ul>
-    </div>
     <div class="grid_9">
       <div class="posts">
         <p>
@@ -25,6 +18,13 @@
           UX: 7.36
         </p>
       </div>
+    </div>
+    <div class="grid_3">
+      <ul>
+        <li>有益性</li>
+        <li></li>
+        <li style="font-size: 3em;">7.27</li>
+      </ul>
     </div>
     <div class="clear"></div>
   </div>
@@ -59,6 +59,10 @@ a {
   position: relative;
 }
 
+.grid_9 {
+  margin-top: 4em;
+}
+
 .title {
   font-size: 2em;
   background-color: #222;
@@ -75,8 +79,12 @@ a {
 }
 
 .grid_3 {
+  opacity: 0;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+  animation: 2s fadein;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 
 .delay1 {
