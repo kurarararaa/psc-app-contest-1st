@@ -11,7 +11,15 @@ main {
 }
 
 div {
-  @extend .indigo--text;
+  color: white;
+}
+
+.v-toolbar__title {
+  color: #666;
+}
+
+.v-application .text-center {
+    color: #666;
 }
 
 .base-background {

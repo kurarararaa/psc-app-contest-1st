@@ -14,6 +14,7 @@
       <CarouselUsefulness />
       <CarouselGrandPrix />
     </v-carousel>
+    <NicoModal />
   </v-container>
 </template>
 
@@ -23,4 +24,5 @@ import CarouselIdea from '~/components/CarouselIdea.vue'
 import CarouselUx from '~/components/CarouselUx.vue'
 import CarouselUsefulness from '~/components/CarouselUsefulness.vue'
 import CarouselGrandPrix from '~/components/CarouselGrandPrix.vue'
+import NicoModal from '~/components/parts/NicoModal.vue'
 </script>
