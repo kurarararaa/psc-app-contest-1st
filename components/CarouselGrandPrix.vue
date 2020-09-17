@@ -1,5 +1,5 @@
 <template>
-  <v-carousel-item key="idea">
+  <v-carousel-item>
     <v-sheet color="white" height="100%">
       <v-row class="fill-height" align="center">
         <ContestChart

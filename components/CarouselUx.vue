@@ -1,25 +1,23 @@
 <template>
-  <div>
-    <v-carousel-item key="idea">
-      <v-sheet color="white" height="100%">
-        <v-row class="fill-height" align="center">
-          <ContestChart
-            :chart-data="chartData"
-            style="width: 30%; margin: 0 5% 0 10%;"
-          />
-          <TypographyUx style="margin: 0 10% 0 5%;" />
-        </v-row>
-      </v-sheet>
-      <NicoModal
-        title="UX賞"
-        name="Gradation to you"
-        author="よわよわ"
-        icon="/icons/ux.png"
-        url="https://sites.google.com/pscsrv.co.jp/flutter-app-contest-2020/gradation-to-you"
-        :coments="coments"
-      />
-    </v-carousel-item>
-  </div>
+  <v-carousel-item>
+    <v-sheet color="white" height="100%">
+      <v-row class="fill-height" align="center">
+        <ContestChart
+          :chart-data="chartData"
+          style="width: 30%; margin: 0 5% 0 10%;"
+        />
+        <TypographyUx style="margin: 0 10% 0 5%;" />
+      </v-row>
+    </v-sheet>
+    <NicoModal
+      title="UX賞"
+      name="Gradation to you"
+      author="よわよわ"
+      icon="/icons/ux.png"
+      url="https://sites.google.com/pscsrv.co.jp/flutter-app-contest-2020/gradation-to-you"
+      :coments="coments"
+    />
+  </v-carousel-item>
 </template>
 
 <script lang="ts">
