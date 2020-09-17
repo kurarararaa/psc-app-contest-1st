@@ -10,14 +10,15 @@
           <TypographyUx style="margin: 0 10% 0 5%;" />
         </v-row>
       </v-sheet>
+      <NicoModal
+        title="UX賞"
+        name="Gradation to you"
+        author="よわよわ"
+        icon="/icons/ux.png"
+        url="https://sites.google.com/pscsrv.co.jp/flutter-app-contest-2020/gradation-to-you"
+        :coments="coments"
+      />
     </v-carousel-item>
-    <NicoModal
-      title="UX賞"
-      name="Gradation to you"
-      author="よわよわ"
-      icon="/icons/ux.png"
-      url="https://sites.google.com/pscsrv.co.jp/flutter-app-contest-2020/gradation-to-you"
-    />
   </div>
 </template>
 
@@ -30,6 +31,16 @@ import NicoModal from '~/components/parts/NicoModal.vue'
 
 @Component({ components: { ContestChart } })
 export default class CarouselUx extends Vue {
+  coments = [
+    '様々な写真加工アプリがありますが、「写真とグラデーションを重ねる」という発想が斬新で素敵だと思いました！',
+    'このアプリで使ってみたい画像が多すぎて本当に楽しかった。',
+    'グラデーションの作成がタップするだけで簡単に作成できる点がよかったと思いました。',
+    'このアプリを使えば配色について悩む必要が無く直感で気に入るものを手軽に選ぶことができる点が良かった。',
+    '簡単にきれいな画像を作れるのでいいと思いました。',
+    'チュートリアルが丁寧だったのでUXを意識した良いアプリだと思いました。',
+    'タップするだけで様々なグラデーションが表示されて見ていて楽しかったです。',
+  ]
+
   // チャートのデータ
   private chartData: ChartData = {
     // 横軸のラベル

@@ -2,7 +2,7 @@
   <div class="usefulness-container">
     <div class="grid_12">
       <h1 class="title">
-        有益で賞
+        有益性
       </h1>
     </div>
     <div class="clear"></div>

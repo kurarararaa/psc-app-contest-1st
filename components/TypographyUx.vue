@@ -2,11 +2,11 @@
   <div class="ux-container">
     <div class="left">
       <p class="red">完成度:</p>
-      <p>8.27</p>
+      <p class="score">8.27</p>
       <p class="red">アイデア:</p>
-      <p>6.27</p>
+      <p class="score">6.27</p>
       <p class="red">有益性:</p>
-      <p>6.27</p>
+      <p class="score">6.27</p>
     </div>
     <div class="right">
       <h1 class="blue first">ux: 8.36</h1>
@@ -22,9 +22,14 @@ $red: #e42149;
 $yellow: #fff146;
 
 .ux-container {
-  color: #0091e5;
+  color: #0091e5 !important;
   font-family: 'Arimo', sans-serif;
   background: none !important;
+}
+
+.score {
+  color: #666;
+  margin-left: 8em;
 }
 
 .left {
@@ -33,14 +38,15 @@ $yellow: #fff146;
   line-height: 1.5em;
   position: absolute;
   bottom: 30px;
-  left: 40%;
+  left: 50%;
   font-size: 2em;
 }
 
 .right {
   position: absolute;
-  bottom: 180px;
+  bottom: -100px;
   right: 50px;
+  font-size: 0.9em;
 }
 
 p {

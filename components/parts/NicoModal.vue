@@ -1,8 +1,8 @@
 <template>
-  <v-row ref="nico" justify="center">
+  <div ref="nico" justify="center">
     <v-btn
       color="blue-grey"
-      class="ma-2 white--text"
+      class="ma-2 white--text nico-btn"
       fab
       @click="showNicoNico()"
     >
@@ -31,7 +31,7 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-  </v-row>
+  </div>
 </template>
 
 <script>
@@ -58,6 +58,10 @@ export default {
       type: String,
       required: true,
     },
+    coments: {
+      type: Array,
+      default: () => [],
+    },
   },
   data() {
     return {
@@ -81,20 +85,11 @@ export default {
   methods: {
     showNicoNico() {
       this.dialog = true
-      const coments = [
-        '様々な写真加工アプリがありますが、「写真とグラデーションを重ねる」という発想が斬新で素敵だと思いました！',
-        'このアプリで使ってみたい画像が多すぎて本当に楽しかった。',
-        'グラデーションの作成がタップするだけで簡単に作成できる点がよかったと思いました。',
-        'このアプリを使えば配色について悩む必要が無く直感で気に入るものを手軽に選ぶことができる点が良かった。',
-        '簡単にきれいな画像を作れるのでいいと思いました。',
-        'チュートリアルが丁寧だったのでUXを意識した良いアプリだと思いました。',
-        'タップするだけで様々なグラデーションが表示されて見ていて楽しかったです。',
-      ]
-      coments.forEach((coment, index) => {
+      this.coments.forEach((coment, index) => {
         setTimeout(() => this.nico.send(coment), index * 250)
       })
 
-      setTimeout(() => (this.displayable = true), coments.length * 1500)
+      setTimeout(() => (this.displayable = true), this.coments.length * 1500)
     },
   },
 }
@@ -109,6 +104,12 @@ export default {
 
 .v-list-item__content > * {
   color: #333;
+}
+
+.nico-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 
 @keyframes open-card {
