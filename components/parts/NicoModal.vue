@@ -1,29 +1,32 @@
 <template>
   <v-row ref="nico" justify="center">
-    <v-btn color="primary" dark @click.stop="showNicoNico()">
-      Open Dialog
+    <v-btn
+      color="blue-grey"
+      class="ma-2 white--text"
+      fab
+      @click="showNicoNico()"
+    >
+      <v-icon dark>mdi-cloud-upload</v-icon>
     </v-btn>
 
-    <v-dialog v-model="dialog" max-width="290">
-      <v-card>
-        <v-card-title class="headline"
-          >Use Google's location service?</v-card-title
-        >
-
-        <v-card-text>
-          Let Google help apps determine location. This means sending anonymous
-          location data to Google, even when no apps are running.
-        </v-card-text>
+    <v-dialog v-model="dialog" height="1000" max-width="500">
+      <v-card v-if="displayable" class="nico-card">
+        <v-list-item three-line>
+          <v-list-item-content>
+            <div class="overline mb-4">{{ title }}</div>
+            <v-list-item-title class="headline mb-1">{{
+              name
+            }}</v-list-item-title>
+            <v-list-item-subtitle>@{{ author }}</v-list-item-subtitle>
+          </v-list-item-content>
+          <v-list-item-avatar size="200">
+            <img :src="icon" />
+          </v-list-item-avatar>
+        </v-list-item>
 
         <v-card-actions>
-          <v-spacer></v-spacer>
-
-          <v-btn color="green darken-1" text @click="dialog = false">
-            Disagree
-          </v-btn>
-
-          <v-btn color="green darken-1" text @click="dialog = false">
-            Agree
+          <v-btn :href="url" target="_blank" text>
+            Go Page!
           </v-btn>
         </v-card-actions>
       </v-card>
@@ -34,9 +37,32 @@
 <script>
 import NicoJS from '@/plugins/nico.js'
 export default {
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    name: {
+      type: String,
+      required: true,
+    },
+    author: {
+      type: String,
+      required: true,
+    },
+    icon: {
+      type: String,
+      required: true,
+    },
+    url: {
+      type: String,
+      required: true,
+    },
+  },
   data() {
     return {
       dialog: false,
+      displayable: false,
       nico: null,
     }
   },
@@ -65,9 +91,34 @@ export default {
         'タップするだけで様々なグラデーションが表示されて見ていて楽しかったです。',
       ]
       coments.forEach((coment, index) => {
-        setTimeout(() => this.nico.send(coment), index * 500)
+        setTimeout(() => this.nico.send(coment), index * 250)
       })
+
+      setTimeout(() => (this.displayable = true), coments.length * 1500)
     },
   },
 }
 </script>
+
+<style scoped>
+.nico-card {
+  opacity: 0;
+  animation: 0.5s 0.5s open-card;
+  animation-fill-mode: forwards;
+}
+
+.v-list-item__content > * {
+  color: #333;
+}
+
+@keyframes open-card {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotateX(-270deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotateX(0deg);
+  }
+}
+</style>

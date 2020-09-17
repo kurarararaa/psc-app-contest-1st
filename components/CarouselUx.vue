@@ -1,15 +1,24 @@
 <template>
-  <v-carousel-item key="idea">
-    <v-sheet color="white" height="100%">
-      <v-row class="fill-height" align="center">
-        <ContestChart
-          :chart-data="chartData"
-          style="width: 30%; margin: 0 5% 0 10%;"
-        />
-        <TypographyUx style="margin: 0 10% 0 5%;" />
-      </v-row>
-    </v-sheet>
-  </v-carousel-item>
+  <div>
+    <v-carousel-item key="idea">
+      <v-sheet color="white" height="100%">
+        <v-row class="fill-height" align="center">
+          <ContestChart
+            :chart-data="chartData"
+            style="width: 30%; margin: 0 5% 0 10%;"
+          />
+          <TypographyUx style="margin: 0 10% 0 5%;" />
+        </v-row>
+      </v-sheet>
+    </v-carousel-item>
+    <NicoModal
+      title="UX賞"
+      name="Gradation to you"
+      author="よわよわ"
+      icon="/icons/ux.png"
+      url="https://sites.google.com/pscsrv.co.jp/flutter-app-contest-2020/gradation-to-you"
+    />
+  </div>
 </template>
 
 <script lang="ts">
@@ -17,6 +26,7 @@ import { Component, Vue, Prop } from 'nuxt-property-decorator'
 import { ChartData } from 'chart.js'
 import ContestChart from '~/components/ContestChart.vue'
 import TypographyUx from '~/components/TypographyUx.vue'
+import NicoModal from '~/components/parts/NicoModal.vue'
 
 @Component({ components: { ContestChart } })
 export default class CarouselUx extends Vue {
